@@ -1,0 +1,41 @@
+#Abuelo de Juanita: carlos
+
+#Sexo opuesto
+X = sebas,
+Y = estefa
+X = sebas,
+Y = juanita
+X = sebas,
+Y = cata
+X = mario,
+Y = estefa
+X = mario,
+Y = juanita
+X = mario,
+Y = cata
+X = carlos,
+Y = estefa
+X = carlos,
+Y = juanita
+X = carlos,
+Y = cata
+X = estefa,
+Y = sebas
+X = juanita,
+Y = sebas
+X = cata,
+Y = sebas
+X = estefa,
+Y = mario
+X = juanita,
+Y = mario
+X = cata,
+Y = mario
+X = estefa,
+Y = carlos
+X = juanita,
+Y = carlos
+X = cata,
+Y = carlos
+
+#Carlos es abuelo de sebas: true
