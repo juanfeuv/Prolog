@@ -8,7 +8,7 @@ hijo(camila, carlos). hijo(camila, claudia).
 hombre(sebas). hombre(mario). hombre(carlos).
 hombre(jaimito). hombre(daniel).
 mujer(estefa). mujer(juanita). mujer(cata).
-mujer(camila).
+mujer(camila). mujer(claudia).
 
 % reglas
 padre(Y, X) :- hijo(X, Y), hombre(Y).
@@ -17,8 +17,8 @@ sexo_opuesto(X, Y) :- hombre(X), mujer(Y).
 sexo_opuesto(Y, X) :- hombre(X), mujer(Y).
 abuelo(X, Z) :- padre(X, Y), hijo(Z, Y).
 abuela(Y, Z) :- madre(Y, R), hijo(Z, R).
-hermanos(X, Y) :- padre(Z, X), padre(Z, Y).
-hermanos(X, Y) :- madre(Z, X), madre(Z, Y).
+hermanos(X, Y) :- padre(Z, X), padre(Z, Y), X \= Y.
+hermanos(X, Y) :- madre(Z, X), madre(Z, Y), X \= Y.
 tio(X, Y) :- hermanos(X, Z), padre(Z, Y), not(padre(X, Y)).
 tio(X, Y) :- hermanos(X, Z), madre(Z, Y), not(madre(X, Y)).
 sobrino(Y, X) :- hermanos(X, Z), padre(Z, Y), not(padre(X, Y)).
